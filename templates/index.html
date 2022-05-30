@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      {{ fontawesome_html() }}
+      <meta charset="utf-8" />
+      <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+      <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"/>
+
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta
+         name="description"
+         content="Web site created using create-react-app"
+         />
+      <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+      <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+      <!-- <link rel="stylesheet" href="./styles.css"> -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+      <!-- <title>React App</title> -->
+      <title>{{ title }}</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   </head>
+   <body class="heading" >
+      <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+      <!-- header  -->
+      <nav class="navbar navbar-expand-lg bg-warning sticky-top " >
+         <div class="head1 container-fluid">
+            <i class='fas fa-seedling' style='font-size:36px;color:green;'></i>
+            <a class="navbar-brand" href="#" style="font-weight:bolder";>FarmEasy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+               <!-- <li class="nav-item " > 
+                  <a class="nav-link active rounded " aria-current="page" href='index.html' style="border-style:groove;" > <i class="fa fa-home" style="font-size:20px"></i></a>
+                  </li>
+                  </ul> -->
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav nav-pills bg-light text-dark " >
+               <!-- <ul class="navbar-nav mr-auto"> -->
+               <li class="nav-item active">
+                  <a class="nav-link" href='#wholebody' style="font-weight: bolder;"><i class="fa fa-home" style="font-size:20px"></i> Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#service" style="font-weight: bolder;"><i class="fa fa-wrench" style="font-size:20px;color: darkred;"></i> Services</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#predsoil" style="font-weight: bolder;"><i class="fa fa-leaf" style="font-size:20px;color: green;font-weight: bolder;"></i> Predict Crop</a>
+               </li>
+            </div>
+         </div>
+      </nav>
+      <!-- intro -->
+      <!-- <div  style="background-image: url('https://wallpaperaccess.com/full/3543885.jpg');"> -->
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <div class="jumbtron-fluid  " id="wholebody">
+         <!-- <p>asdasd</p> -->
+         <div class="body2 container">
+            <h1 class="display-4 font-weight-bold" style="font-weight: bolder;">FarmEasy</h1>
+            <p class="lead">Get Informed Decisions About Your Farming Strategy</p>
+         </div>
+      </div>
+      <!-- <hr class="my-4"> -->
+      <div  style="background-image: url('https://wallpaperaccess.com/full/3543885.jpg'); " >
+         <!-- <div class="container-fluid   "> -->
+         <div class="row align-items-start"  style="margin: 2%;">
+            <div class="col-lg-6  imgbody1  ">
+               <img src="https://scx2.b-cdn.net/gfx/news/2022/farming-practices-good.jpg"  class="img-fluid rounded" alt="Responsive image" width="500" height="500"  >
+            </div>
+            <div class="col-lg-6 body1 ">
+               <h1 class="display-5 font-weight-bold " style="color: aliceblue;font-weight: 300;">Improving agriculture, improving lives, cultivating crops to make farmers increase profit.</h1>
+               <div class="container-fluid  d-flex justify-content-center card1">
+                  <p style="font-size: 20px;color:black;font-weight: 500;">We use state-of-the-art machine learning technologies to help you guide through the entire farming process. Make informed decisions to understand the demographics of your area, understand the factors that affect your crop and keep them healthy for a super awesome successful yield.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- cards -->
+      <hr class="my-4">
+      <a name="service">
+         <div id="service">
+            <div class="container-fluid bg-light pt-3">
+               <div class="row card1">
+                  <h3 style="text-align:center ;font-weight: 800;">SERVICES</h3>
+                  <div class="col-md-4 card1">
+                     <div class="card mdb-color lighten-2 text-center z-depth-2">
+                        <img src="https://img.krishijagran.com/media/36675/plants-irrigation.jpg"
+                           class="card-img-top" alt="..." style="height: 245px;">
+                        <!-- <hr class="my-0"> -->
+                        <!-- <div class="card-body"> -->
+                        <div class="card-body">
+                           <!-- <p class="white-text mb-0">واحد جنيه سوداني = <?php echo convertCurrency("1.00", "SDG", "USD")." دولار امريكي";?>.</p> -->
+                           <h3 class="card-title font-weight-bold"  style="font-weight: bolder">
+                           CROP RECOMMENDATION</h5>
+                           <p class="card-text"> Recommendation about the type of crops to be cultivated which is best suited for the respective conditions</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 card1">
+                     <img src="https://www.isaaa.org/kc/cropbiotechupdate/files/images/1232019115251PM.jpg" class="card-img-top"
+                        alt="..." >
+                     <!-- <div class="card-body"> -->
+                     <div class="card mdb-color lighten-2 text-center z-depth-2">
+                        <div class="card-body">
+                           <!-- <p class="white-text mb-0">بتكوين <i class="fa fa-bitcoin" aria-hidden="true"></i> = <?php echo $info['rate']." جنيه سوداني";?></p> -->
+                           <h3 class="card-title font-weight-bold" style="font-weight: bolder">
+                              FERTILIZER
+                           </h3>
+                           <p class="card-text cardser">Recommendation about the type of fertilizer best suited for the particular soil
+                              and the recommended crop
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 card1">
+                     <img src="https://cff2.earth.com/uploads/2019/01/10193159/New-bioengineering-method-could-improve-rice-crop-yields-960x640.jpg"
+                        class="card-img-top" alt="...">
+                     <div class="card mdb-color lighten-2 text-center z-depth-2">
+                        <div class="card-body">
+                           <!-- <p class="white-text mb-0">بتكوين <i class="fa fa-bitcoin" aria-hidden="true"></i> = <?php echo $info['rate']." جنيه سوداني";?></p> -->
+                           <h3 class="card-title font-weight-bold"  style="font-weight: bolder">
+                           CROP YIELD</h5>
+                           <p class="card-text">Prediction of the crop yield in advance by analyzing factors like district (assuming same weather and soil parameters in a particular district), state, season & crop type </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </a>
+      </div>
+      <!-- <hr class="my-4"> -->
+      <!-- <hr class="my-4"> -->
+      <a name="predsoil">
+         <div id="predsoil">
+         <div class="jumbtron-fluid " >
+            <div  style="background-image: url('https://wallpaperaccess.com/full/3543885.jpg');">
+               <!-- <div class="container-fluid bg-light" > -->
+               <!-- <div style="background-image: url('https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp');"></div> -->
+               <!-- <div style="background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.medicaldaily.com%2Fbrief-history-genetically-modified-organisms-prehistoric-breeding-modern-344076&psig=AOvVaw08KdZd-c1dRd1KeimxsS3_&ust=1653564977928000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJCIvevH-vcCFQAAAAAdAAAAABAD');"> -->
+               <div class="heading ">
+                  <h3 style="text-align: center;padding-bottom: 3%;padding-top: 3%;color: aliceblue;font-weight: 800;">Find out the most suitable crop to grow in your farm</h3>
+               </div>
+               <div class="container"  style="padding-right:30%;padding-left: 10%;padding-bottom: 5%;" >
+                  <!-- <h1 style="text-align:center;" >Fertilizer Recommendation </h1> -->
+                  <form  method="POST" action="{{ url_for('crop_prediction') }}">
+                     <div class="container bg-light" style="padding: 2%;margin-left: 25%;margin-right: 20%;font-weight: 600;">
+                        <div class="form-group">
+                           <!-- <p>Nitrogen</p> -->
+                           <label for="Nitrogen" style="font-size: 15px;font-weight: 200;">Nitrogen (Example:50)</label>
+                           <input type="number" class="form-control" id="floatingInput" name="nitrogen"  >
+                        </div>
+                        <div class="form-group">
+                           <label for="Phosphorous" style="font-size: 15px;font-weight: 200;">Phosphorous (Example:50)</label>
+                           <input type="number" class="form-control" id="floatingInput" name="phosphorous">
+                        </div>
+                        <div class="form-group">
+                           <label for="Potassium" style="font-size: 15px;font-weight: 200;">Potassium (Example:50)</label>
+                           <input type="number" class="form-control" id="floatingInput" name="potassium">
+                        </div>
+                        <div class="form-group">
+                           <label for="pH" style="font-size: 15px;font-weight: 200;">pH</label>
+                           <input type="number" step="0.01" class="form-control" id="floatingInput"  name="ph">
+                        </div>
+                        <div class="form-group ">
+                           <label for="Rainfall" style="font-size: 15px;font-weight: 200;">Rainfall(in mm)</label>
+                           <input type="number" step="0.01" class="form-control" id="floatingInput" name="rainfall" >
+                        </div>
+                        <div class="form-group">
+                           <label for="State" style="font-size: 15px ;font-weight: 200;"><b> State</b></label>
+                           <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt" class="form-control" style=" color: black" required="">
+                              <option value="">Select State</option>
+                              <option value="Andaman &amp; Nicobar">Andaman &amp; Nicobar</option>
+                              <option value="Andhra Pradesh">Andhra Pradesh</option>
+                              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                              <option value="Assam">Assam</option>
+                              <option value="Bihar">Bihar</option>
+                              <option value="Chandigarh">Chandigarh</option>
+                              <option value="Chhattisgarh">Chhattisgarh</option>
+                              <option value="Dadra &amp; Nagar Haveli">Dadra &amp; Nagar Haveli</option>
+                              <option value="Daman &amp; Diu">Daman &amp; Diu</option>
+                              <option value="Delhi">Delhi</option>
+                              <option value="Goa">Goa</option>
+                              <option value="Gujarat">Gujarat</option>
+                              <option value="Haryana">Haryana</option>
+                              <option value="Himachal Pradesh">Himachal Pradesh</option>
+                              <option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
+                              <option value="Jharkhand">Jharkhand</option>
+                              <option value="Karnataka">Karnataka</option>
+                              <option value="Kerala">Kerala</option>
+                              <option value="Lakshadweep">Lakshadweep</option>
+                              <option value="Madhya Pradesh">Madhya Pradesh</option>
+                              <option value="Maharashtra">Maharashtra</option>
+                              <option value="Manipur">Manipur</option>
+                              <option value="Meghalaya">Meghalaya</option>
+                              <option value="Mizoram">Mizoram</option>
+                              <option value="Nagaland">Nagaland</option>
+                              <option value="Orissa">Orissa</option>
+                              <option value="Pondicherry">Pondicherry</option>
+                              <option value="Punjab">Punjab</option>
+                              <option value="Rajasthan">Rajasthan</option>
+                              <option value="Sikkim">Sikkim</option>
+                              <option value="Tamil Nadu">Tamil Nadu</option>
+                              <option value="Tripura">Tripura</option>
+                              <option value="Uttar Pradesh">Uttar Pradesh</option>
+                              <option value="Uttaranchal">Uttaranchal</option>
+                              <option value="West Bengal">West Bengal</option>
+                           </select>
+                           <label for="City" style="font-size: 15px;font-weight: 200;"><b> City</b></label>
+                           <select id="state" class="form-control" name="city" style=" color: black" required=""></select>
+                           <script language="javascript">
+                              print_state("sts");
+                           </script>
+                           <div style="text-align: center;padding-top: 3%;" >
+                              <button onclick="location.href='cropresult.html'" type="submit" id="crop-pred" class="btn btn-warning mb-3" style="font-weight: bold;" >Predict</button>
+                              <!-- <div class="container">
+                                 <h3 >The Recommended Fertilizer is </h3> 
+                                 </div> -->
+                           </div>
+                        </div>
+                  </form>
+                  <!-- <div style="border-right:1px solid #000;height:550px"></div> -->
+                  <!-- <h1 >The Predicted Crop is </h1> -->
+                  </div>
+                  <!-- </div> -->
+               </div>
+            </div>
+      </a>
+      <!-- <hr class="my-4"> -->
+      <!-- <hr class="my-4">  -->
+      </div>
+      <footer class="page-footer bg-warning">
+         <!-- Footer Links -->
+         <div class="footer-copyright text-center py-3" style="font-weight: bolder;">Made with ❤️ by Team <i class='fas fa-seedling' style='font-size:20px;color:green;'></i>FarmEasy 
+         </div>
+         <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            <a href="/"> FarmEasy.com</a>
+         </div>
+         <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+      <!-- <button id="myButton" class="float-left submit-button" >Home</button> -->
+      <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+      <script>
+         $(document).ready(function(){
+            $(window).scroll(function () {
+                  if ($(this).scrollTop() > 50) {
+                     $('#back-to-top').fadeIn();
+                  } else {
+                     $('#back-to-top').fadeOut();
+                  }
+               });
+               // scroll body to 0px on click
+               $('#back-to-top').click(function () {
+                  $('body,html').animate({
+                     scrollTop: 0
+                  }, 400);
+                  return false;
+               });
+         });
+      </script>
+      <script type="text/JavaScript" src="{{ url_for('static', filename='scripts/cities.js') }}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   </body>
+</html>
